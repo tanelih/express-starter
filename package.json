@@ -1,0 +1,28 @@
+{
+  "name": "express-service",
+  "version": "1.0.0",
+  "scripts": {
+    "docs": "esdoc -c .esdocrc src",
+    "lint": "eslint src",
+    "start": "node index.js",
+    "test": "mocha --compilers js:babel/register",
+    "watch": "nodemon --watch src index.js",
+    "postinstall": "sh bin/postinstall.sh"
+  },
+  "dependencies": {
+    "babel": "^5.8.23",
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "morgan": "^1.6.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^4.1.3",
+    "esdoc": "^0.4.0",
+    "eslint": "^1.6.0",
+    "eslint-config-airbnb": "^0.1.0",
+    "eslint-plugin-react": "^3.5.1",
+    "mocha": "^2.3.3",
+    "nodemon": "^1.7.1",
+    "supertest": "^1.1.0"
+  }
+}
